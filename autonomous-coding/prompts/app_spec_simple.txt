@@ -1,0 +1,67 @@
+<project_specification>
+  <project_name>Simple Todo App</project_name>
+
+  <overview>
+    Build a simple, functional todo list web application with a clean interface.
+    Users should be able to add, complete, and delete todo items.
+  </overview>
+
+  <technology_stack>
+    <frontend>
+      <framework>React with Vite</framework>
+      <styling>Tailwind CSS (via CDN)</styling>
+      <state_management>React hooks (useState)</state_management>
+      <port>5173</port>
+    </frontend>
+    <backend>
+      <runtime>Node.js with Express</runtime>
+      <database>In-memory storage (simple array)</database>
+      <port>3001</port>
+    </backend>
+  </technology_stack>
+
+  <core_features>
+    <todo_management>
+      - Add new todo items with a text input
+      - Mark todos as completed/uncompleted with checkbox
+      - Delete todo items with a delete button
+      - Display list of all todos
+      - Show completed count
+      - Filter view: All, Active, Completed
+    </todo_management>
+
+    <user_interface>
+      - Clean, centered layout
+      - Input field at top with "Add" button
+      - Todo list with checkboxes and delete buttons
+      - Completed todos shown with strikethrough
+      - Filter buttons at bottom
+      - Responsive design for mobile
+    </user_interface>
+  </core_features>
+
+  <database_schema>
+    <todos>
+      - id: unique identifier
+      - text: todo item text
+      - completed: boolean
+      - created_at: timestamp
+    </todos>
+  </database_schema>
+
+  <api_endpoints>
+    - GET /api/todos - Get all todos
+    - POST /api/todos - Create new todo
+    - PUT /api/todos/:id - Update todo (toggle completed)
+    - DELETE /api/todos/:id - Delete todo
+  </api_endpoints>
+
+  <success_criteria>
+    - User can add todos
+    - User can toggle completion status
+    - User can delete todos
+    - Filters work correctly
+    - Clean, professional UI
+    - No console errors
+  </success_criteria>
+</project_specification>
